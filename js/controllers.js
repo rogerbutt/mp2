@@ -1,4 +1,4 @@
-var demoApp = angular.module('demoApp', []);
+var imdbApp = angular.module('imdbApp', []);
 
 // demoApp.controller('demoController', ['$scope', '$http', function($scope, $http) {
 //   $http.get('public/data/cs498rk.json').success(function(data) {
@@ -6,3 +6,14 @@ var demoApp = angular.module('demoApp', []);
 //     $scope.artistOrder = 'name';
 //   });
 // }]);
+
+imdbApp.controller('imdbListCtrl', function() {
+})
+
+.controller('imdbDetailCtrl', function() {
+
+})
+
+.controller('imdbGalleryCtrl', function() {
+
+});
