@@ -3,17 +3,24 @@
 angular.module('imdbApp')
   .service('dataService', function($http) {
 
-    var movieData = null
+    var searchData = null;
 
-    var loadData = function(cb) {
+    var loadSearchData = function(cb) {
       $http.get('data/imdb250.json').success(function(data) {
-        movieData = data;
-        cb(movieData);
-        //derp
+        var searchData = [];
+
+        for(var i = 0; i < data.length; i++) {
+          searchData.push({ rank: data[i].rank,
+                            title: data[i].title,
+                            id: data[i].imdbID});
+        }
+
+        cb(searchData);
+        
       });
     };
 
     return {
-      loadData: loadData
+      loadSearchData: loadSearchData
     };
   });
