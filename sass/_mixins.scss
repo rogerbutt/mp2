@@ -2,11 +2,10 @@
 
 .full-row, .half-row {
   @include grid-row();
-  height: calc(100vh - 50px);
   max-width: 100%;
   margin: 0;
 }
 
-.half-row {
-  height: calc(50vh - 25px);
+.full-row {
+  height: calc(100vh - 50px);
 }

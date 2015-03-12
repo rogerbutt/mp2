@@ -1,19 +1,18 @@
-var imdbApp = angular.module('imdbApp', []);
 
-// demoApp.controller('demoController', ['$scope', '$http', function($scope, $http) {
-//   $http.get('public/data/cs498rk.json').success(function(data) {
-//     $scope.courseInfo = data;
-//     $scope.artistOrder = 'name';
-//   });
-// }]);
 
-imdbApp.controller('imdbListCtrl', function() {
+var imdbControllers = angular.module('imdbControllers', []);
+
+imdbControllers.controller('imdbListCtrl', function(dataService, $scope) {
+
+  dataService.loadData(function(data) {
+    $scope.movies = data;
+  });
+});
+
+imdbControllers.controller('imdbDetailCtrl', function() {
+
 })
 
-.controller('imdbDetailCtrl', function() {
-
-})
-
-.controller('imdbGalleryCtrl', function() {
+imdbControllers.controller('imdbGalleryCtrl', function() {
 
 });

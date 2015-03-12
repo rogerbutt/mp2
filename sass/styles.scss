@@ -15,12 +15,25 @@
   letter-spacing: 3px;
   font-family: 'Lato', Helvetica;
   font-weight: 500;
+  transition: all 0.2s ease-in;
+
+  .name {
+    margin-left: 20px;
+  }
 
   .top-bar-section {
     ul {
       li {
+        width: 200px;
+        text-align: center;
+        background-color: transparent;
+
         a {
-          background-color: transparent;
+          font-size: 16px;
+          display: inline;
+          padding: 0 !important;
+          padding-bottom: 10px !important;
+          background: transparent !important;
           text-transform: uppercase;
         }
       }
@@ -28,11 +41,218 @@
   }
 }
 
+.top-bar.nav-small {
+  background-color: #1E1741;
+  padding-top: 0px;
+  height: 50px;
+  transition: all 0.2s ease-in;
+}
+
 .jumbotron {
   overflow: hidden;
   height: 100vh;
 
   video {
+    min-width: 100%;
+  }
+}
+
+.seasons {
+  padding: 0;
+  height: calc(50vh - 25px);
+
+  .background {
     width: 100%;
+    height: 100%;
+    background-size: cover;
+  }
+
+  .foreground {
+    position: absolute;
+    margin-top: -80px;
+    padding: 10px;
+    font-size: 2em;
+
+    h2 {
+      color: white;
+      height: 32px;
+      font-family: 'Raleway', sans-serif;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 0;
+    }
+
+    h3 {
+      margin-top: -10px;
+      font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+      font-size: 16px;
+      color: white;
+      background-color: $blue;
+      display: inline;
+      padding-top: 1px;
+      padding-left: 2px;
+      padding-right: 2px;
+    }
+  }
+}
+
+#season-one {
+  .background {
+    background-image: url('../data/mp1_assets/seasonone.jpg');
+  }
+}
+
+#season-two {
+  .background {
+    background-image: url('../data/mp1_assets/seasontwo.jpg');
+  }
+}
+
+#season-three {
+  .background {
+    background-image: url('../data/mp1_assets/seasonthree.jpg');
+  }
+}
+
+#season-four {
+  .background {
+    background-image: url('../data/mp1_assets/seasonfour.jpg');
+  }
+}
+
+#season-five {
+  .background {
+    background-image: url('../data/mp1_assets/seasonfive.jpg');
+  }
+}
+
+#season-six {
+  .background {
+    background-image: url('../data/mp1_assets/seasonsix.jpg');
+  }
+}
+
+footer {
+  background-image: url('../data/mp1_assets/greendale.jpg');
+  background-attachment: fixed;
+  position: relative;
+  text-align: center;
+
+  h2 {
+    padding-top: 25vh;
+    color: white;
+    font-size: 3em;
+  }
+
+  .social-row {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    height: 150px;
+    padding-top: 50px;
+    background-color: $purple;
+
+    .icon-row {
+      top: -70px;
+      left: 0;
+      position: absolute;
+      height: 100px;
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+
+      .icon-center {
+        margin: 0 auto;
+        width: 430px;
+        height: 100px;
+        display: block;
+
+        .icon-wrapper {
+          float: left;
+          width: 100px;
+          height: 100px;
+          border-radius: 50px;
+          background-color: white;
+          color: $purple;
+          margin-right: 10px;
+
+          i {
+            margin-top: 20px;
+            font-size: 4em;
+          }
+        }
+
+        .icon-wrapper:last-child {
+          margin-right: 0px;
+        }
+      }
+    }
+
+    .yahoo-row {
+      color: white;
+      border-top: 2px solid white;
+      border-bottom: 2px solid white;
+      width: 500px;
+      margin: 0 auto;
+
+      img {
+        height: 50px;
+      }
+
+      * {
+        display: inline;
+        font-family: 'Lato';
+        letter-spacing: 1px;
+        vertical-align: middle;
+      }
+
+    }
+  }
+}
+
+#characters {
+
+  #carousel-left, #carousel-right {
+    color: white;
+    font-size: 3em;
+    position: absolute;
+    z-index: 20;
+    margin-top: calc((100vh - 50px)/2 - 24px);
+  }
+
+  #carousel-left {
+    left: 20px;
+  }
+
+  #carousel-right {
+    right: 20px;
+  }
+
+  .character {
+    height: calc(100vh - 50px);
+    background-color: $purple;
+    overflow: hidden;
+
+    img {
+      float: left;
+      width: 50%;
+    }
+
+    .info {
+      margin-top: 15vh;
+      padding: 15px;
+      padding-right: 100px;
+      color: white;
+
+      h2 {
+        font-family: 'Raleway', sans-serif;
+        color: white;
+      }
+
+      h4 {
+        color: white;
+      }
+    }
   }
 }
