@@ -9,6 +9,7 @@ angular.module('imdbApp')
       $http.get('data/imdb250.json').success(function(data) {
         movieData = data;
         cb(movieData);
+        //derp
       });
     };
 
