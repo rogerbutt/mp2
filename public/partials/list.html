@@ -4,7 +4,7 @@
 
   <div>
     <div ng-hide="!query" ng-repeat="movie in movies | filter:query">
-      <a href="#/details/{{movie.id}}"><h2>{{movie.title}}</h2></a>
+      <a href="#/details/{{movie.rank}}"><h2>{{movie.title}}</h2></a>
       <p>Rank: {{movie.rank}}</p>
       <img src="./data/images/{{movie.id}}.jpg" />
     </div>

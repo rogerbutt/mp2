@@ -4,10 +4,12 @@ angular.module('imdbApp')
   .service('dataService', function($http) {
 
     var searchData = null;
+    var allData = null
 
     var loadSearchData = function(cb) {
       $http.get('data/imdb250.json').success(function(data) {
-        var searchData = [];
+        searchData = [];
+        allData = data;
 
         for(var i = 0; i < data.length; i++) {
           searchData.push({ rank: data[i].rank,
@@ -16,11 +18,16 @@ angular.module('imdbApp')
         }
 
         cb(searchData);
-        
+
       });
     };
 
+    var loadMovieData = function(rank, cb) {
+      cb(allData[rank]);
+    };
+
     return {
-      loadSearchData: loadSearchData
+      loadSearchData: loadSearchData,
+      loadMovieData: loadMovieData
     };
   });

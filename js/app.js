@@ -10,7 +10,7 @@ imdbApp.config(['$routeProvider',
         templateUrl: 'partials/list.html',
         controller: 'imdbListCtrl'
       }).
-      when('/details/:movie', {
+      when('/details/:movieId', {
         templateUrl: 'partials/details.html',
         controller: 'imdbDetailCtrl'
       }).
