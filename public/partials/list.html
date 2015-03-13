@@ -1,9 +1,13 @@
 <div>
   <h1>IMDB Movie Directory</h1>
   <input ng-model="query">
+  <radiogroup>
+    <input type="radio" name="searchFilter" value="title" ng-click="refine='title'" checked>Title
+    <input type="radio" name="searchFilter" value="rank" ng-click="refine='rank'">Rank
+  </radiogroup>
 
-  <div>
-    <div ng-hide="!query" ng-repeat="movie in movies | filter:query">
+  <div ng-hide="!query">
+    <div ng-repeat="movie in movies | filter:query | orderBy:refine">
       <a href="#/details/{{movie.rank}}"><h2>{{movie.title}}</h2></a>
       <p>Rank: {{movie.rank}}</p>
       <img src="./data/images/{{movie.id}}.jpg" />

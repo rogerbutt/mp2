@@ -14,7 +14,8 @@ angular.module('imdbApp')
         for(var i = 0; i < data.length; i++) {
           searchData.push({ rank: data[i].rank,
                             title: data[i].title,
-                            id: data[i].imdbID});
+                            id: data[i].imdbID,
+                            genre: data[i].genre});
         }
 
         cb(searchData);

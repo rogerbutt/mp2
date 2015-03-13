@@ -2,6 +2,13 @@ $(document).ready(function() {
 
   var navbar = $('.top-bar');
 
+  $('nav ul li a').click(function(e){
+    e.preventDefault();
+    var id = $(this).attr("href");
+    var top = $(id).offset().top - 50;
+    $('html, body').animate({scrollTop: top}, 500);
+  });
+
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     if(scroll >= 200) {
@@ -34,12 +41,51 @@ $(document).ready(function() {
   });
 
   $('#carousel-left').click(function() {
-    console.log('whut');
     $('#characters .carousel').slick('slickPrev');
   });
 
   $('#carousel-right').click(function() {
     $('#characters .carousel').slick('slickNext');
+  });
+
+  $('#modal .content a').click(function() {
+    $('#modal').css({'display': 'none'});
+  });
+
+  $('.seasons').click(function(e) {
+
+    var id = e.target.parentElement.id
+    switch(e.target.parentElement.id) {
+      case 'season-one':
+        $('#modal .content p').text('Season One');
+        $('#modal .content .image').css({"background-image": 'url(../data/mp1_assets/seasonone.jpg)'});
+        break;
+      case 'season-two':
+        $('#modal .content p').text('Season Two');
+        $('#modal .content .image').css({"background-image": 'url(../data/mp1_assets/seasontwo.jpg)'});
+        break;
+      case 'season-three':
+        $('#modal .content p').text('Season Three');
+        $('#modal .content .image').css({"background-image": 'url(../data/mp1_assets/seasonthree.jpg)'});
+        break;
+
+      case 'season-four':
+        $('#modal .content p').text('Season Four');
+        $('#modal .content .image').css({"background-image": 'url(../data/mp1_assets/seasonfour.jpg)'});
+        break;
+
+      case 'season-five':
+        $('#modal .content p').text('Season Five');
+        $('#modal .content .image').css({"background-image": 'url(../data/mp1_assets/seasonfive.jpg)'});
+        break;
+
+      case 'season-six':
+        $('#modal .content p').text('Season Six');
+        $('#modal .content .image').css({"background-image": 'url(../data/mp1_assets/seasonsix.jpg)'});
+        break;
+    }
+
+    $('#modal').css({'display': 'block'});
   });
 
 });

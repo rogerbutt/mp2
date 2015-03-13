@@ -22,22 +22,38 @@
 	      <a href="#"><object id="logo" type="image/svg+xml" data="./data/mp1_assets/logo.svg" width="300px">Your browser does not support SVG</object></a>
 	    </li>
 	     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-	    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
 	  </ul>
 
 	  <section class="top-bar-section">
 	    <!-- Left Nav Section -->
 	    <ul class="right">
-	      <li><a href="https://courses.engr.illinois.edu/cs498rk1/index.html" id="a-seasons">Seasons</a></li>
-        <li><a href="https://courses.engr.illinois.edu/cs498rk1/index.html" id="a-characters">Characters</a></li>
-        <li><a href="https://courses.engr.illinois.edu/cs498rk1/index.html" id="a-social">Social</a></li>
+	      <li><a href="#seasons" id="a-seasons">Seasons</a></li>
+        <li><a href="#characters" id="a-characters">Characters</a></li>
+        <li><a href="#social" id="a-social">Social</a></li>
 	    </ul>
 	  </section>
 	</nav>
 
+  <div id="modal">
+    <div class="content">
+      <p></p>
+      <a>X</a>
+      <div class="image"></div>
+    </div>
+  </div>
+
   <div class="full-row jumbotron">
     <div class="column">
       <video type="video/mp4" src="./data/mp1_assets/community-clip.mp4" autoplay autobuffer loop></video>
+      <div class="jumbo-overlay-wrapper">
+        <div class="jumbo-overlay">
+          <h1 style="font-size: 1.8em">You don't get to a</h1>
+          <h1 style="font-size: 7.05em">movie</h1>
+          <h1 style="font-size: 2.1em">without making</h1>
+          <h1 style="font-size: 3.35em">six seasons</h1>
+          <h3>#SixSeasonsAndAMovie</h3>
+        </div>
+      </div>
     </div>
   </div>
 

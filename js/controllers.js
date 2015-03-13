@@ -18,6 +18,10 @@ imdbControllers.controller('imdbDetailCtrl', function($routeParams, $scope, data
 
 });
 
-imdbControllers.controller('imdbGalleryCtrl', function() {
+imdbControllers.controller('imdbGalleryCtrl', function(dataService, $scope) {
+
+  dataService.loadSearchData(function(data) {
+    $scope.movies = data;
+  });
 
 });

@@ -1,0 +1,24 @@
+<div>
+  <ul class="button-group">
+		<a class="button" ng-click="sort='Action'">Action</a>
+		<a class="button" ng-click="sort='Adventure'">Adventure</a>
+		<a class="button" ng-click="sort='Comedy'">Comedy</a>
+		<a class="button" ng-click="sort='Crime'">Crime</a>
+		<a class="button" ng-click="sort='Drama'">Drama</a>
+		<a class="button" ng-click="sort='Musical'">Musical</a>
+		<a class="button" ng-click="sort='Mystery'">Mystery</a>
+		<a class="button" ng-click="sort='Romance'">Romance</a>
+		<a class="button" ng-click="sort='Sci-Fi'">Sci-Fi</a>
+		<a class="button" ng-click="sort='Thriller'">Thriller</a>
+		<a class="button" ng-click="sort='Western'">Western</a>
+  </ul>
+
+  <div class="row">
+		<ul class="small-block-grid-10">
+			<li ng-repeat="movie in movies | filter:{genre:sort}">
+				<a href="#/details/{{movie.rank}}"><img src="data/images/{{movie.id}}.jpg"></a>
+			</li>
+		</ul>
+	</div>
+
+</div>
