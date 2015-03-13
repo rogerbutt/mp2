@@ -7814,26 +7814,27 @@ th.hide-for-touch {
 
 /* line 144, ../../sass/styles.scss */
 .seasons {
+  cursor: pointer;
   padding: 0;
   background-color: black;
   height: calc(50vh - 25px); }
-  /* line 149, ../../sass/styles.scss */
+  /* line 150, ../../sass/styles.scss */
   .seasons .background {
     opacity: 0.6;
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 100%; }
-  /* line 157, ../../sass/styles.scss */
+  /* line 158, ../../sass/styles.scss */
   .seasons .background:hover {
     opacity: 1; }
-  /* line 161, ../../sass/styles.scss */
+  /* line 162, ../../sass/styles.scss */
   .seasons .foreground {
     position: absolute;
     margin-top: -80px;
     padding: 10px;
     font-size: 2em; }
-    /* line 167, ../../sass/styles.scss */
+    /* line 168, ../../sass/styles.scss */
     .seasons .foreground h2 {
       color: white;
       height: 32px;
@@ -7841,7 +7842,7 @@ th.hide-for-touch {
       text-transform: uppercase;
       margin: 0;
       padding: 0; }
-    /* line 176, ../../sass/styles.scss */
+    /* line 177, ../../sass/styles.scss */
     .seasons .foreground h3 {
       margin-top: -10px;
       font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
@@ -7853,42 +7854,42 @@ th.hide-for-touch {
       padding-left: 2px;
       padding-right: 2px; }
 
-/* line 191, ../../sass/styles.scss */
+/* line 192, ../../sass/styles.scss */
 #season-one .background {
   background-image: url("../data/mp1_assets/seasonone.jpg"); }
 
-/* line 197, ../../sass/styles.scss */
+/* line 198, ../../sass/styles.scss */
 #season-two .background {
   background-image: url("../data/mp1_assets/seasontwo.jpg"); }
 
-/* line 203, ../../sass/styles.scss */
+/* line 204, ../../sass/styles.scss */
 #season-three .background {
   background-image: url("../data/mp1_assets/seasonthree.jpg"); }
 
-/* line 209, ../../sass/styles.scss */
+/* line 210, ../../sass/styles.scss */
 #season-four .background {
   background-image: url("../data/mp1_assets/seasonfour.jpg"); }
 
-/* line 215, ../../sass/styles.scss */
+/* line 216, ../../sass/styles.scss */
 #season-five .background {
   background-image: url("../data/mp1_assets/seasonfive.jpg"); }
 
-/* line 221, ../../sass/styles.scss */
+/* line 222, ../../sass/styles.scss */
 #season-six .background {
   background-image: url("../data/mp1_assets/seasonsix.jpg"); }
 
-/* line 226, ../../sass/styles.scss */
+/* line 227, ../../sass/styles.scss */
 footer {
   background-image: url("../data/mp1_assets/greendale.jpg");
   background-attachment: fixed;
   position: relative;
   text-align: center; }
-  /* line 232, ../../sass/styles.scss */
+  /* line 233, ../../sass/styles.scss */
   footer h2 {
     padding-top: 25vh;
     color: white;
     font-size: 3em; }
-  /* line 238, ../../sass/styles.scss */
+  /* line 239, ../../sass/styles.scss */
   footer .social-row {
     position: absolute;
     left: 0;
@@ -7897,7 +7898,7 @@ footer {
     height: 150px;
     padding-top: 50px;
     background-color: #281e55; }
-    /* line 247, ../../sass/styles.scss */
+    /* line 248, ../../sass/styles.scss */
     footer .social-row .icon-row {
       top: -70px;
       left: 0;
@@ -7906,13 +7907,13 @@ footer {
       width: 100%;
       margin: 0 auto;
       text-align: center; }
-      /* line 256, ../../sass/styles.scss */
+      /* line 257, ../../sass/styles.scss */
       footer .social-row .icon-row .icon-center {
         margin: 0 auto;
         width: 430px;
         height: 100px;
         display: block; }
-        /* line 262, ../../sass/styles.scss */
+        /* line 263, ../../sass/styles.scss */
         footer .social-row .icon-row .icon-center .icon-wrapper {
           float: left;
           width: 100px;
@@ -7921,90 +7922,90 @@ footer {
           background-color: white;
           color: #281e55;
           margin-right: 10px; }
-          /* line 271, ../../sass/styles.scss */
+          /* line 272, ../../sass/styles.scss */
           footer .social-row .icon-row .icon-center .icon-wrapper i {
             margin-top: 20px;
             font-size: 4em; }
-        /* line 277, ../../sass/styles.scss */
+        /* line 278, ../../sass/styles.scss */
         footer .social-row .icon-row .icon-center .icon-wrapper:last-child {
           margin-right: 0px; }
-    /* line 283, ../../sass/styles.scss */
+    /* line 284, ../../sass/styles.scss */
     footer .social-row .yahoo-row {
       color: white;
       border-top: 2px solid white;
       border-bottom: 2px solid white;
       width: 500px;
       margin: 0 auto; }
-      /* line 290, ../../sass/styles.scss */
+      /* line 291, ../../sass/styles.scss */
       footer .social-row .yahoo-row img {
         height: 50px; }
-      /* line 294, ../../sass/styles.scss */
+      /* line 295, ../../sass/styles.scss */
       footer .social-row .yahoo-row * {
         display: inline;
         font-family: 'Lato';
         letter-spacing: 1px;
         vertical-align: middle; }
 
-/* line 307, ../../sass/styles.scss */
+/* line 308, ../../sass/styles.scss */
 #characters #carousel-left, #characters #carousel-right {
   color: white;
   font-size: 3em;
   position: absolute;
   z-index: 20;
   margin-top: calc((100vh - 50px)/2 - 24px); }
-/* line 315, ../../sass/styles.scss */
+/* line 316, ../../sass/styles.scss */
 #characters #carousel-left {
   left: 20px; }
-/* line 319, ../../sass/styles.scss */
+/* line 320, ../../sass/styles.scss */
 #characters #carousel-right {
   right: 20px; }
-/* line 323, ../../sass/styles.scss */
+/* line 324, ../../sass/styles.scss */
 #characters .character {
   height: calc(100vh - 50px);
   background-color: #281e55;
   overflow: hidden; }
-  /* line 328, ../../sass/styles.scss */
+  /* line 329, ../../sass/styles.scss */
   #characters .character img {
     float: left;
     width: 50%; }
-  /* line 333, ../../sass/styles.scss */
+  /* line 334, ../../sass/styles.scss */
   #characters .character .info {
     margin-top: 15vh;
     padding: 15px;
     padding-right: 100px;
     color: white; }
-    /* line 339, ../../sass/styles.scss */
+    /* line 340, ../../sass/styles.scss */
     #characters .character .info h2 {
       font-family: 'Raleway', sans-serif;
       color: white; }
-    /* line 344, ../../sass/styles.scss */
+    /* line 345, ../../sass/styles.scss */
     #characters .character .info h4 {
       color: white; }
 
 @media only screen and (max-width: 60em) {
-  /* line 355, ../../sass/styles.scss */
+  /* line 356, ../../sass/styles.scss */
   nav .name object {
     margin-top: 5px;
     width: 250px; }
 
-  /* line 365, ../../sass/styles.scss */
+  /* line 366, ../../sass/styles.scss */
   .top-bar .top-bar-section ul li {
     width: 120px; }
-    /* line 368, ../../sass/styles.scss */
+    /* line 369, ../../sass/styles.scss */
     .top-bar .top-bar-section ul li a {
       font-size: 0.8em; } }
 @media only screen and (max-width: 40em) {
-  /* line 379, ../../sass/styles.scss */
+  /* line 380, ../../sass/styles.scss */
   .top-bar.nav-small object {
     margin-top: 6px; }
 
-  /* line 385, ../../sass/styles.scss */
+  /* line 386, ../../sass/styles.scss */
   #characters .character img {
     margin-top: 50vh;
     margin-left: 19%;
     height: 50vh;
     width: initial; }
-  /* line 392, ../../sass/styles.scss */
+  /* line 393, ../../sass/styles.scss */
   #characters .character .info {
     position: absolute;
     width: 100vw;
@@ -8012,30 +8013,30 @@ footer {
     padding-top: 30px;
     margin: 0; }
 
-  /* line 404, ../../sass/styles.scss */
+  /* line 405, ../../sass/styles.scss */
   footer h2 {
     font-size: 2.5em; }
-  /* line 408, ../../sass/styles.scss */
+  /* line 409, ../../sass/styles.scss */
   footer .social-row {
     height: 100px; }
-    /* line 411, ../../sass/styles.scss */
+    /* line 412, ../../sass/styles.scss */
     footer .social-row .icon-row {
       top: -50px; }
-      /* line 414, ../../sass/styles.scss */
+      /* line 415, ../../sass/styles.scss */
       footer .social-row .icon-row .icon-center {
         width: 330px; }
-        /* line 417, ../../sass/styles.scss */
+        /* line 418, ../../sass/styles.scss */
         footer .social-row .icon-row .icon-center .icon-wrapper {
           width: 75px;
           height: 75px;
           border-radius: 50px; }
-          /* line 422, ../../sass/styles.scss */
+          /* line 423, ../../sass/styles.scss */
           footer .social-row .icon-row .icon-center .icon-wrapper i {
             font-size: 2.5em; }
-    /* line 429, ../../sass/styles.scss */
+    /* line 430, ../../sass/styles.scss */
     footer .social-row .yahoo-row {
       width: 320px;
       font-size: 0.9em; }
-      /* line 433, ../../sass/styles.scss */
+      /* line 434, ../../sass/styles.scss */
       footer .social-row .yahoo-row img {
         height: 40px; } }

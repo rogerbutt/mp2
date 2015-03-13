@@ -7,7 +7,7 @@
   </radiogroup>
 
   <div ng-hide="!query">
-    <div ng-repeat="movie in movies | filter:query | orderBy:refine">
+    <div class="movie-item" ng-repeat="movie in movies | filter:query | orderBy:refine">
       <a href="#/details/{{movie.rank}}"><h2>{{movie.title}}</h2></a>
       <p>Rank: {{movie.rank}}</p>
       <img src="./data/images/{{movie.id}}.jpg" />

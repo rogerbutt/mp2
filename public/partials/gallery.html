@@ -16,7 +16,7 @@
   <div class="row">
 		<ul class="small-block-grid-10">
 			<li ng-repeat="movie in movies | filter:{genre:sort}">
-				<a href="#/details/{{movie.rank}}"><img src="data/images/{{movie.id}}.jpg"></a>
+				<a href="#/details/{{movie.rank - 1}}"><img src="data/images/{{movie.id}}.jpg"></a>
 			</li>
 		</ul>
 	</div>
